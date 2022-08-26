@@ -71,4 +71,34 @@ const personalMovieDB = {
 
 
 
+function pow(x, n) {
+    if (n === 1) {
+        return x;
+    } else {
+        console.log(n);
+        return x * pow (x, n-1);
+    }
+}
+
+console.log(pow(2, 6));
+
+
+
+let i = 0;
+function factorial(n) {
+    if (typeof(n) != 'number' || n % 1 != 0) {
+        return 'Введите целое положительное число';
+    }
+    if (n <= 0) {
+        return 1;
+    }
+    if (n === 1) {
+        return n * 1;
+    } else {
+        console.log(n);
+        return n * factorial(n - 1);
+    }
+}
+
+console.log(factorial(5));
 
